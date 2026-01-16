@@ -1,8 +1,19 @@
 console.log("Javascript connection");
+import http from "http";
+// console.log(http);
 
-import { log } from "console";
-import fs from "fs"
+http.createServer((req, res) => {
+    res.write("Hello Would")
+    res.end()
+})
+    .listen(9002, () => {
+        console.log("Port Number 9002");
 
+    })
+// ================================
+
+
+// import fs from "fs"
 // sync
 // fs.writeFileSync("./test.txt", "Muhammad Farooq")
 
@@ -42,6 +53,7 @@ import fs from "fs"
 // });
 // ================================
 
+// ================================
 
 // import and export
 // import { add } from "./calc.js"
