@@ -28,7 +28,6 @@ const result = http.createServer((req, res) => {
             // <a href="/">Home</a>`);
             fs.readFile("./about.html", (err, data) => {
                 if (err) throw err;
-                console.log("About Data Done");
                 res.end(data)
             })
             break;
